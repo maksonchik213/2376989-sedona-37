@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <!--Разметка хэдера -->
+    
+    <header>
+      <nav>
+
+        <!--Навигация по сайту-->
+
+        <ul class="page-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">
+              <img src="" alt="Логотип сайта">
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+          </li>
+        </ul>
+
+        <!--Меню пользователя-->
+        
+        <ul class="user-menu">
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+              <img src="">
+            </a>
+          </li>
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">
+              <span class="visually-hidden">Добавить в избранное</span>
+              <img src="">
+            </a>
+          </li>
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>  
+    </header>
+
+    <!--Разметка контентной части-->
+
+    <!--Фильтровка по критериям-->
+
+    <main class="main-inner">
+      <header class="inner-head">
+        <h1 class="inner-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumps">
+          <li>
+            <a href="index.html" class="breadcrumps-item">
+              <span class="visually-hidden">На главную</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="breadcrumps-item">
+              <span>Гостиницы</span>
+            </a>
+          </li>
+        </ul>
+
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          
+          <div class="infrastructure">
+            <label id="type-of-infrastructure">Инфраструктура:</label>
+            <input type="checkbox" id="contactChoice1" name="contact" value="hotel" checked>
+            <label for="type-of-infrastructure">Бассейн</label>
+
+            <input type="checkbox" name="contact" value="motel" checked>
+            <label for="type-of-infrastructure">Парковка</label>
+
+            <input type="checkbox" name="contact" value="apartments">
+            <label for="type-of-infrastructure">Wi-Fi</label>
+          </div>
+
+          <div>
+            <label id="type-of-housing">Тип Жилья:</label>
+            <input type="radio" id="contactChoice1" name="contact" value="hotel" checked>
+            <label for="type-of-housing">Гостиница</label>
+
+            <input type="radio" name="contact" value="motel">
+            <label for="type-of-housing">Мотель</label>
+
+            <input type="radio" name="contact" value="apartments">
+            <label for="type-of-housing">Апартаменты</label>
+          </div>
+
+          <div class="cost-filter">
+            
+          </div>
+
+          <button type="submit">Применить</button>
+          <button type="submit">Сбросить</button>
+        </form>
+      </header>
+    </main>
+
+    <!--Разметка футера-->
+
+    <footer>
+      
+      <!--Подписка на рассылку-->
+
+      <article class="mailing">
+        <b>Подпишитесь на рассылку</b>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post" name="mail">
+          <label>
+            <input type="text" name="" placeholder="Ваш e-mail">
+            Подписаться
+          </label>
+        </form>
+      </article>
+
+      <!--Контактная информация-->
+
+      <ul class="social-network">
+        <li>
+          <span class="visually-hidden">Вконтакте</span>
+        </li>
+        <li>
+          <span class="visually-hidden">Телеграмм</span>
+        </li>
+        <li>
+          <span class="visually-hidden">Ютуб</span>
+        </li>
+      </ul>
+
+      <a class="phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+
+      <p>
+        <a href="#">
+          <span class="visually-hidden">html academy</span>
+        </a>
+      </p>
+    </footer>
+    
+  </body>
+</html>
