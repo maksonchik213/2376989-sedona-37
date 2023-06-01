@@ -57,9 +57,9 @@
     <!--Фильтровка по критериям-->
 
     <main class="main-inner">
-      <header class="inner-head">
+      <section class="inner-head">
         <h1 class="inner-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumps">
+        <ol class="breadcrumps">
           <li>
             <a href="index.html" class="breadcrumps-item">
               <span class="visually-hidden">На главную</span>
@@ -70,7 +70,7 @@
               <span>Гостиницы</span>
             </a>
           </li>
-        </ul>
+        </ol>
 
         <form action="https://echo.htmlacademy.ru/" method="post">
           
@@ -105,7 +105,7 @@
           <button type="submit">Применить</button>
           <button type="submit">Сбросить</button>
         </form>
-      </header>
+      </section>
 
       <!--Блок с Галереей-->
 
@@ -122,7 +122,7 @@
             <b>Amara Resort & Spa</b>
             <p>Гостиница От 4000 ₽</p>
             <a href="#">Подробнее</a>
-            <button type="submit">в избранное</button>
+            <button type="button">в избранное</button>
             <span class="visually-hidden">4 звезды</span>
             <p>Рейтинг: 8,5</p>
           </li>
@@ -132,7 +132,7 @@
             <b>Villas at Poco Diablo</b>
             <p>Гостиница От 5000 ₽</p>
             <a href="#">Подробнее</a>
-            <button type="submit">в избранное</button>
+            <button type="button">в избранное</button>
             <span class="visually-hidden">4 звезды</span>
             <p>Рейтинг: 9,2</p>
           </li>
@@ -142,7 +142,7 @@
             <b>Desert Quail Inn</b>
             <p>Гостиница От 2500 ₽</p>
             <a href="#">Подробнее</a>
-            <button type="submit">в избранное</button>
+            <button type="button">в избранное</button>
             <span class="visually-hidden">3 звезды</span>
             <p>Рейтинг: 6,9</p>
           </li>
@@ -152,7 +152,7 @@
             <b>GreenTree Inn</b>
             <p>Гостиница От 1500 ₽</p>
             <a href="#">Подробнее</a>
-            <button type="submit">в избранное</button>
+            <button type="button">в избранное</button>
             <span class="visually-hidden">2 звезды</span>
             <p>Рейтинг: 5,0</p>
           </li>
@@ -183,36 +183,44 @@
         </ol>
       </section>
 
+      <!--Подписка на рассылку-->
+
+      <article class="inner-mailing">
+        <b>Подпишитесь на рассылку</b>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post" name="mail">
+          <label>
+            <input type="text" name="" placeholder="Ваш e-mail">
+            <button type="submit">Подписаться</button>
+          </label>
+        </form>
+      </article>
+
     </main>
 
     <!--Разметка футера-->
 
     <footer>
       
-      <!--Подписка на рассылку-->
-
-      <article class="mailing">
-        <b>Подпишитесь на рассылку</b>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post" name="mail">
-          <label>
-            <input type="text" name="" placeholder="Ваш e-mail">
-            Подписаться
-          </label>
-        </form>
-      </article>
+      
 
       <!--Контактная информация-->
 
       <ul class="social-network">
         <li>
-          <span class="visually-hidden">Вконтакте</span>
+          <a href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li>
-          <span class="visually-hidden">Телеграмм</span>
+          <a href="#">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
         </li>
         <li>
-          <span class="visually-hidden">Ютуб</span>
+          <a href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
         </li>
       </ul>
 
