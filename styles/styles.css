@@ -147,3 +147,34 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+/*Подпись на рассылку*/
+
+.mailing {
+	background-image: url(../images/subscribe_background.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: #fff;
+}
+
+.mailing b {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.mailing p {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.mailing button {
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #82B3D3;
+}
