@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
   <!--Разметка хэдера -->
@@ -39,8 +41,8 @@
                 <img src="">
               </a>
             </li>
-            <li class="user-menu-item">
-              <a class="user-menu-link" href="#">Хочу сюда</a>
+            <li class="user-menu-item user-menu-item-button">
+              <a class="user-menu-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
       </nav>  
@@ -64,32 +66,32 @@
             </ol>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="infrastructure">
-                <label id="type-of-infrastructure">Инфраструктура:</label>
+                <label id="type-of-infrastructure"><span class="filter-title">Инфраструктура:</span></label>
                 <input type="checkbox" id="contactChoice1" name="contact" value="hotel" checked>
-                <label for="type-of-infrastructure">Бассейн</label>
+                <label for="type-of-infrastructure"><span class="options">Бассейн</span></label>
 
                 <input type="checkbox" name="contact" value="motel" checked>
-                <label for="type-of-infrastructure">Парковка</label>
+                <label for="type-of-infrastructure"><span class="options">Парковка</span></label>
 
                 <input type="checkbox" name="contact" value="apartments">
-                <label for="type-of-infrastructure">Wi-Fi</label>
+                <label for="type-of-infrastructure"><span class="options">Wi-Fi</span></label>
               </div>
               <div class="type-of-living">
-                <label id="type-of-housing">Тип Жилья:</label>
+                <label id="type-of-housing"><span class="filter-title">Тип Жилья:</span></label>
                 <input type="radio" id="contactChoice1" name="contact" value="hotel" checked>
-                <label for="type-of-housing">Гостиница</label>
+                <label for="type-of-housing"><span class="options">Гостиница</span></label>
 
                 <input type="radio" name="contact" value="motel">
-                <label for="type-of-housing">Мотель</label>
+                <label for="type-of-housing"><span class="options">Мотель</span></label>
 
                 <input type="radio" name="contact" value="apartments">
-                <label for="type-of-housing">Апартаменты</label>
+                <label for="type-of-housing"><span class="options">Апартаменты</span></label>
               </div>
               <div class="cost-filter">
                 
               </div>
-              <button type="submit">Применить</button>
-              <button type="submit">Сбросить</button>
+              <button type="submit" class="subscribe-button">Применить</button>
+              <button type="submit" class="reset-button">Сбросить</button>
             </form>
           </section>
         <!--Блок с Галереей-->
@@ -121,51 +123,51 @@
               <li class="hotel-card">
                 <img src="images/catalog/hotel_1.jpg" width="300" height="212" alt="Amara Resort & Spa">
                 <b>Amara Resort & Spa</b>
-                <p>Гостиница От 4000 ₽</p>
+                <p>Гостиница <span class="price">От 4000 ₽</span></p>
                 <a href="#">Подробнее</a>
                 <button type="button">в избранное</button>
                 <img src="" alt="4 звезды">
                   <span class="visually-hidden">4 звезды</span>
-                <p>Рейтинг: 8,5</p>
+                <p><span class="rating">Рейтинг: 8,5</span></p>
               </li>
 
               <li class="hotel-card">
                 <img src="images/catalog/hotel_2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
                 <b>Villas at Poco Diablo</b>
-                <p>Гостиница От 5000 ₽</p>
+                <p>Гостиница <span class="price">От 5000 ₽</span></p>
                 <a href="#">Подробнее</a>
                 <button type="button">в избранное</button>
                 <img src="" alt="4 звезды">
                   <span class="visually-hidden">4 звезды</span>
-                <p>Рейтинг: 9,2</p>
+                <p><span class="rating">Рейтинг: 9,2</span></p>
               </li>
 
               <li class="hotel-card">
                 <img src="images/catalog/hotel_3.jpg" width="300" height="212" alt="Desert Quail Inn">
                 <b>Desert Quail Inn</b>
-                <p>Гостиница От 2500 ₽</p>
+                <p>Гостиница <span class="price">От 2500 ₽</span></p>
                 <a href="#">Подробнее</a>
                 <button type="button">в избранное</button>
                 <img src="" alt="3 звезды">
                   <span class="visually-hidden">3 звезды</span>
-                <p>Рейтинг: 6,9</p>
+                <p><span class="rating">Рейтинг: 6,9</span></p>
               </li>
 
               <li class="hotel-card">
                 <img src="images/catalog/hotel_4.jpg" width="300" height="212" alt="GreenTree Inn">
                 <b>GreenTree Inn</b>
-                <p>Гостиница От 1500 ₽</p>
+                <p>Гостиница <span class="price">От 1500 ₽</span></p>
                 <a href="#">Подробнее</a>
                 <button type="button">в избранное</button>
                 <img src="" alt="2 звезды">
                   <span class="visually-hidden">2 звезды</span>
-                <p>Рейтинг: 5,0</p>
+                <p><span class="rating">Рейтинг: 5,0</span></p>
               </li>
             </ul>
 
             <ol class="gallery-pagination">
-              <li class="pagination-item">
-                <a class="pagination-link current-page" href="#">1</a>
+              <li class="pagination-item current-page">
+                <a class="pagination-link" href="#">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -179,8 +181,8 @@
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
               </li>
-              <li class="pagination-item">
-                <a class="pagination-link other-pages" href="#">...</a>
+              <li class="pagination-item other-pages">
+                <a class="pagination-link" href="#">...</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">10</a>
@@ -200,7 +202,7 @@
           </article>
       </main>
     <!--Разметка футера-->
-    <footer>
+    <footer class="inner-footer">
       <!--Контактная информация-->
 
         <ul class="social-network">
