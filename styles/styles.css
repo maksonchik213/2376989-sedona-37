@@ -23,6 +23,8 @@ body {
 	color: #000;
 }
 
+/*Главная страница*/
+
 /*Стили хедер*/
 .page-header {
 	background-color: #fff;
@@ -177,4 +179,25 @@ body {
 	color: #fff;
 	text-transform: uppercase;
 	background-color: #82B3D3;
+}
+
+.mailing input {
+	line-height: 24px;
+}
+
+/*Футер*/
+.page-footer {
+	background-color: #fff;
+	color: #000;
+}
+
+.page-footer a {
+	text-decoration: none;
+	color: #000;
+}
+
+.page-footer .phone {
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
 }
