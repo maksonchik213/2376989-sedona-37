@@ -59,6 +59,7 @@ body {
 	font-size: 30px;
 	line-height: 36px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .advantages p {
@@ -73,6 +74,7 @@ body {
 	font-size: 24px;
 	line-height: 28px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .advantages-list p {
@@ -103,10 +105,45 @@ body {
 	Font size: 30px;
 	Line height: 36px;
 	text-align: center;
+	text-transform: uppercase;
+}
+
+.service h3 {
+	text-transform: uppercase;
 }
 
 .service p {
 	Font size: 22px;
 	Line height: 26px;
 	text-align: center;
+	color: #333;
+}
+
+.service-item-lightblue {
+	background-color: #83B3D333;
+}
+
+/*Заказ гостиницы*/
+.search-hotel b {
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.search-hotel p {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #333;
+}
+
+.search-hotel .search {
+	background-color: #756157;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
 }
