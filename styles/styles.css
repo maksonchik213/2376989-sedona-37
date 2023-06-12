@@ -188,17 +188,17 @@ body {
 }
 
 /*Футер*/
-.page-footer {
+.page-footer, .inner-footer {
 	background-color: #fff;
 	color: #000;
 }
 
-.page-footer a {
+.page-footer a, .inner-footer a {
 	text-decoration: none;
 	color: #000;
 }
 
-.page-footer .phone {
+.page-footer .phone, .inner-footer .phone {
 	font-size: 40px;
 	line-height: 40px;
 	text-align: center;
@@ -366,3 +366,4 @@ body {
 	font-size: 18px;
 	line-height: 24px;
 }
+
