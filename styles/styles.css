@@ -18,6 +18,9 @@ body {
 	font-family: "PT Sans", sans-serif;
 	font-size: 18px;
 	line-height: 21px;
+	font-weight: 400;
+	background-color: #fff;
+	color: #000;
 }
 
 /*Стили хедер*/
@@ -41,4 +44,69 @@ body {
 	text-decoration: none;
 	color: #fff;
 	background-color: #756157;
+}
+
+/*Стили контента*/
+.block-hero {
+	background-image: url(../images/index_background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+/*Преимущества*/
+.advantages h2 {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.advantages p {
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #333;
+}
+
+.advantages-list h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.advantages-list p {
+	text-align: center;
+	color: #333;
+}
+
+.advantages-item-blue p {
+	color: #fff;
+}
+
+.advantages-item {
+	background-color: #83B3D31F;
+}
+
+.advantages-item-lightblue {
+	background-color: #83B3D333;
+}
+
+.advantages-item-blue {
+	color: #fff;
+	background-color: #82B3D3;
+}
+
+/*Сервисы*/
+.service h2 {
+	font-weight: 700;
+	Font size: 30px;
+	Line height: 36px;
+	text-align: center;
+}
+
+.service p {
+	Font size: 22px;
+	Line height: 26px;
+	text-align: center;
 }
