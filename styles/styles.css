@@ -60,7 +60,9 @@ body {
   text-transform: uppercase;
 }
 
-.advantages p {
+.advantages,
+.advantages-reason,
+.advantage-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
