@@ -38,6 +38,23 @@ body {
 /*Главная страница*/
 
 /*Стили хедер*/
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-navigation {
+  margin: 0;
+  padding: 0;
+  width: 477px;
+}
+
+.user-menu {
+  max-width: 268;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
