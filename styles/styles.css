@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -20,14 +26,21 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   background-color: #f2f2f2;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #fff;
   color: #000;
 }
 
@@ -47,11 +60,11 @@ body {
 .page-navigation {
   margin: 0;
   padding: 0;
-  width: 477px;
+  width: 507px;
 }
 
 .user-menu {
-  max-width: 268;
+  max-width: 268px;
   margin-left: auto;
 }
 
@@ -77,16 +90,30 @@ body {
 .block-hero {
   background-image: url(../images/index_background.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+}
+
+.welcome-title {
+  display: flex;
+  flex-direction: column;
+  width: 458px;
+  margin: 0 auto;
 }
 
 /*Преимущества*/
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  width: 620px;
+  margin: 0 auto;
 }
 
 .advantages,
@@ -111,6 +138,23 @@ body {
   color: #333;
 }
 
+.advantages-list li:first-child {
+  display: flex;
+}
+
+.advantages-list .without-image {
+  display: flex;
+}
+
+.advantages-list li:last-child {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.advantages-item-blue h3 {
+  color: #fff;
+}
+
 .advantages-item-blue p {
   color: #fff;
 }
@@ -129,6 +173,10 @@ body {
 }
 
 /*Сервисы*/
+.service-list {
+  display: flex;
+}
+
 .service h2 {
   font-weight: 700;
   font-size: 30px;
@@ -153,6 +201,10 @@ body {
 }
 
 /*Заказ гостиницы*/
+.search-hotel {
+  text-align: center;
+}
+
 .search-hotel b {
   font-size: 30px;
   line-height: 36px;
@@ -179,11 +231,16 @@ body {
 
 /*Подпись на рассылку*/
 
+.mailing,
+.inner-mailing {
+  text-align: center;
+  color: #fff;
+}
+
 .mailing {
   background-image: url(../images/subscribe_background.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  color: #fff;
 }
 
 .mailing b {
@@ -218,6 +275,7 @@ body {
 .inner-footer {
   background-color: #fff;
   color: #000;
+  display: flex;
 }
 
 .page-footer a,
