@@ -186,6 +186,9 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  width: 505px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service h3 {
@@ -274,11 +277,16 @@ body {
 }
 
 /*Футер*/
+.footer-container {
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+}
+
 .page-footer,
 .inner-footer {
   background-color: #fff;
   color: #000;
-  display: flex;
 }
 
 .page-footer a,
@@ -287,11 +295,22 @@ body {
   color: #000;
 }
 
+.page-footer .social-network,
+.inner-footer .social-network {
+  min-width: 142px;
+}
+
 .page-footer .phone,
 .inner-footer .phone {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
+  width: 331px;
+}
+
+.page-footer .academy-site,
+.inner-footer .academy-site {
+  width: 115px;
 }
 
 /*Страница каталога*/
