@@ -60,12 +60,15 @@ body {
 .page-navigation {
   margin: 0;
   padding: 0;
+  padding-left: 70px;
   width: 507px;
 }
 
 .user-menu {
   max-width: 268px;
   margin-left: auto;
+  padding-left: 0;
+  padding-right: 70px;
 }
 
 .navigation-link {
@@ -339,6 +342,7 @@ body {
 /*Галерея*/
 .results {
   display: flex;
+  padding: 0 70px;
 }
 
 .gallery h2 {
@@ -352,6 +356,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333;
+}
+
+.hotels-list {
+  padding: 0 70px;
 }
 
 .hotels-list b {
@@ -405,6 +413,7 @@ body {
 /*Пагинация*/
 .gallery-pagination {
   display: flex;
+  padding: 0 70px;
 }
 
 .gallery-pagination a {
