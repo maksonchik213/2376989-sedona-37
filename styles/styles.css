@@ -294,9 +294,10 @@ body {
 /*Страница каталога*/
 /*Фильтрация*/
 .inner-head {
+  display: flex;
   background-image: url(../images/catalog/catalog_background.png);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #fff;
 }
 
@@ -336,6 +337,10 @@ body {
 }
 
 /*Галерея*/
+.results {
+  display: flex;
+}
+
 .gallery h2 {
   font-size: 30px;
   line-height: 36px;
@@ -398,6 +403,10 @@ body {
 }
 
 /*Пагинация*/
+.gallery-pagination {
+  display: flex;
+}
+
 .gallery-pagination a {
   font-size: 20px;
   line-height: 36px;
