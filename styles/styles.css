@@ -64,6 +64,11 @@ body {
   width: 507px;
 }
 
+.page-navigation .navigation-item {
+  margin: 0;
+  padding: 0;
+}
+
 .user-menu {
   max-width: 268px;
   margin-left: auto;
@@ -105,6 +110,11 @@ body {
 
 /*Преимущества*/
 .advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list .advantages-item {
   margin: 0;
   padding: 0;
 }
@@ -180,6 +190,11 @@ body {
   display: flex;
 }
 
+.service-list .service-item {
+  margin: 0;
+  padding: 0;
+}
+
 .service h2 {
   font-weight: 700;
   font-size: 30px;
@@ -211,7 +226,7 @@ body {
   text-align: center;
 }
 
-.search-hotel b {
+.search-hotel h2 {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -300,6 +315,11 @@ body {
   min-width: 142px;
 }
 
+.social-network li {
+  margin: 0;
+  padding: 0;
+}
+
 .page-footer .phone,
 .inner-footer .phone {
   font-size: 40px;
@@ -379,6 +399,11 @@ body {
 
 .hotels-list {
   padding: 0 70px;
+}
+
+.hotels-list .hotel-card {
+  margin: 0;
+  padding: 0;
 }
 
 .hotels-list b {
