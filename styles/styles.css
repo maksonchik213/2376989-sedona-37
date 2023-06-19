@@ -434,10 +434,19 @@ body {
 /*Фильтрация*/
 .inner-head {
   display: flex;
+  flex-direction: column;
   background-image: url(../images/catalog/catalog_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  margin-bottom: 56px;
+}
+
+.inner-head-container {
+  margin-top: 35px;
+  margin-bottom: 29px;
+  margin-right: auto;
+  margin-left: 70px;
 }
 
 .inner-title {
@@ -445,6 +454,14 @@ body {
   font-weight: 700;
   line-height: 78px;
   color: #fff;
+  margin: 0;
+}
+
+.breadcrumps li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 40px;
 }
 
 .breadcrumps a {
@@ -479,6 +496,11 @@ body {
 .results {
   display: flex;
   padding: 0 70px;
+  margin-bottom: 40px;
+}
+
+.results select {
+  margin-right: 70px;
 }
 
 .gallery h2 {
@@ -486,6 +508,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 200px;
 }
 
 .gallery select {
@@ -494,8 +517,19 @@ body {
   color: #333;
 }
 
+.type-of-view ul {
+  display: flex;
+}
+
+.type-of-view li {
+  list-style-type: none;
+}
+
 .hotels-list {
   padding: 0 70px;
+  margin: 0;
+  margin-bottom: 80px;
+  list-style-type: none;
 }
 
 .hotels-list .hotel-card {
@@ -555,6 +589,8 @@ body {
 .gallery-pagination {
   display: flex;
   padding: 0 70px;
+  margin: 0;
+  list-style-type: none;
 }
 
 .gallery-pagination a {
@@ -565,6 +601,8 @@ body {
   color: #fff;
   text-decoration: none;
   background-color: #82b3d3;
+  padding: 12px 24px;
+  margin-right: 8px;
 }
 
 .current-page a,
