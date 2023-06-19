@@ -136,6 +136,8 @@ body {
 .advantages-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  margin-bottom: 64px;
 }
 
 .advantages-list .advantages-item {
@@ -197,6 +199,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
+  margin-bottom: 62px;
 }
 
 .advantages-item-blue p {
@@ -209,6 +212,14 @@ body {
   background-color: #83b3d31f;
 }
 
+.advantages-item .block-description {
+  padding: 112px 85px;
+}
+
+.advantages-item h3 {
+  margin-bottom: 62px;
+}
+
 .advantages-item-lightblue {
   background-color: #83b3d333;
 }
@@ -218,14 +229,23 @@ body {
   background-color: #82b3d3;
 }
 
+.advantages-item-blue .block-description {
+  padding: 102px 85px;
+}
+
 /*Сервисы*/
 .service-list {
   display: flex;
+  list-style-type: none;
 }
 
 .service-list .service-item {
   margin: 0;
-  padding: 0;
+}
+
+.service-item h3,
+.service-item p {
+  margin: 0;
 }
 
 .service h2 {
@@ -237,6 +257,12 @@ body {
   width: 505px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.service .staff {
+  margin: 0;
+  margin-bottom: 64px;
 }
 
 .service h3 {
@@ -250,13 +276,30 @@ body {
   color: #333;
 }
 
+.service-item {
+  padding: 81px 85px;
+}
+
 .service-item-lightblue {
   background-color: #83b3d333;
+}
+
+.service-list h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.service {
+  margin-bottom: 96px;
 }
 
 /*Заказ гостиницы*/
 .search-hotel {
   text-align: center;
+  width: 592px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 96px;
 }
 
 .search-hotel h2 {
@@ -264,6 +307,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .search-hotel p {
@@ -271,6 +316,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333;
+  margin-bottom: 54px;
 }
 
 .search-hotel .search {
@@ -289,6 +335,8 @@ body {
 .inner-mailing {
   text-align: center;
   color: #fff;
+  padding: 96px 258px;
+  padding-bottom: 104px;
 }
 
 .mailing {
