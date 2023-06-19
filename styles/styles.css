@@ -350,12 +350,14 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .mailing p {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-bottom: 54px;
 }
 
 .mailing button {
@@ -374,9 +376,10 @@ body {
 
 /*Футер*/
 .footer-container {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 40px 70px;
+  padding-bottom: 30px;
   display: flex;
+  justify-content: space-between;
 }
 
 .page-footer,
@@ -396,9 +399,22 @@ body {
   min-width: 142px;
 }
 
+.social-network {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 142px;
+  list-style-type: none;
+}
+
 .social-network li {
   margin: 0;
   padding: 0;
+}
+
+.social-network a {
+  min-width: 24px;
+  min-height: 14px;
+  padding: 13px;
 }
 
 .page-footer .phone,
