@@ -70,9 +70,11 @@ body {
 
 .page-navigation {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   padding-left: 70px;
+  padding-right: 70px;
   width: 700px;
   list-style-type: none;
 }
@@ -83,10 +85,11 @@ body {
 }
 
 .user-menu {
-  max-width: 268px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
   margin-left: auto;
   padding-left: 0;
-  padding-right: 70px;
 }
 
 .navigation-link {
@@ -103,10 +106,15 @@ body {
   display: block;
   min-width: 20px;
   min-height: 20px;
-  padding: 22px 12px;
+}
+
+.user-menu-item-button {
+  min-width: 160px;
+  min-height: 36px;
 }
 
 .user-menu-item-button a {
+  padding: 8px 34px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -130,6 +138,16 @@ body {
   flex-direction: column;
   width: 458px;
   margin: 0 auto;
+}
+
+.welcome-title .welcome {
+  display: block;
+  margin: 51px auto 11px;
+}
+
+.welcome-title .gourgeous {
+  display: block;
+  margin: 0 auto 54px;
 }
 
 /*Преимущества*/
@@ -167,6 +185,10 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333;
+}
+
+.advantage-description {
+  font-size: 18px;
 }
 
 .advantages-list h3 {
@@ -236,6 +258,7 @@ body {
 /*Сервисы*/
 .service-list {
   display: flex;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -526,6 +549,8 @@ body {
 }
 
 .hotels-list {
+  display: flex;
+  flex-wrap: wrap;
   padding: 0 70px;
   margin: 0;
   margin-bottom: 80px;
@@ -562,8 +587,10 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #fff;
   background-color: #756157;
+  padding: 8px 26px;
 }
 
 .hotels-list button {
@@ -574,6 +601,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   background-color: #82b3d3;
+  padding: 8px 20px;
 }
 
 .hotels-list .rating span {
@@ -585,6 +613,46 @@ body {
   background-color: #f2f2f2;
 }
 
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content img {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.card-content b {
+  margin-bottom: 16px;
+}
+
+.card-content .price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card-content .card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card-rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: space-between;
+}
 /*Пагинация*/
 .gallery-pagination {
   display: flex;
