@@ -589,8 +589,9 @@ body {
   color: #333;
 }
 
-.type-of-view ul {
+.type-of-view {
   display: flex;
+  margin: 0;
 }
 
 .type-of-view li {
