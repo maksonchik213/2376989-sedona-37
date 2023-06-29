@@ -81,14 +81,17 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  padding: 0 70px;
 }
 
 .page-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
   width: 700px;
+  max-width: 700px;
   list-style-type: none;
 }
 
@@ -224,6 +227,11 @@ body {
 
 .advantages-list .without-image {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-list .without-image .advantages-item {
+  width: 400px;
 }
 
 .advantages-list li:last-child {
@@ -314,6 +322,12 @@ body {
   padding: 81px 85px;
   display: flex;
   flex-direction: column;
+}
+
+.service img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .service-item-lightblue {
@@ -432,7 +446,7 @@ body {
 
 .page-footer .social-network,
 .inner-footer .social-network {
-  min-width: 142px;
+  max-width: 185px;
 }
 
 .social-network {
@@ -514,6 +528,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   min-width: 1060px;
+  padding-bottom: 70px;
 }
 
 .filter .infrastructure {
@@ -570,6 +585,7 @@ body {
 }
 
 .results select {
+  width: 292px;
   margin-right: 70px;
   height: 49px;
 }
@@ -581,6 +597,8 @@ body {
   text-transform: uppercase;
   margin: 0;
   margin-right: 200px;
+  min-width: 338px;
+  max-width: 500px;
 }
 
 .gallery select {
@@ -634,6 +652,8 @@ body {
 }
 
 .hotels-list a {
+  display: block;
+  height: min-content;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -643,6 +663,7 @@ body {
   color: #fff;
   background-color: #756157;
   padding: 8px 26px;
+  width: 140px;
 }
 
 .hotels-list button {
@@ -653,7 +674,12 @@ body {
   text-transform: uppercase;
   color: #fff;
   background-color: #82b3d3;
-  padding: 8px 20px;
+  width: 140px;
+  border: none;
+}
+
+.favourite-card button {
+  background-color: #7db54f;
 }
 
 .hotels-list .rating span {
@@ -701,9 +727,19 @@ body {
   justify-content: space-between;
 }
 
+.card-rate .rating {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.rating span {
+  padding: 9px 22px;
+}
+
 .star-rating {
   display: flex;
-  justify-content: space-between;
+  gap: 6px;
+  padding: 10px 0;
 }
 /*Пагинация*/
 .gallery-pagination {
