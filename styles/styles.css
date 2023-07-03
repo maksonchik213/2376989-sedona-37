@@ -666,6 +666,19 @@ body {
   background-color: #756157;
   padding: 8px 26px;
   width: 140px;
+  border-radius: 4px;
+}
+
+.hotels-list a:hover {
+  background-color: #615048;
+}
+
+.hotels-list a:focus {
+  background-color: #615048;
+}
+
+.hotels-list a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-list button {
@@ -678,10 +691,37 @@ body {
   background-color: #82b3d3;
   width: 140px;
   border: none;
+  border-radius: 4px;
+}
+
+.hotels-list button:hover {
+  background-color: #68a2ca;
+}
+
+.hotels-list button:focus {
+  background-color: #68a2ca;
+}
+
+.hotels-list button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .favourite-card button {
   background-color: #7db54f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.favourite-card button:hover {
+  background-color: #6c9e42;
+}
+
+.favourite-card button:focus {
+  background-color: #6c9e42;
+}
+
+.favourite-card button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-list .rating span {
