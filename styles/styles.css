@@ -480,6 +480,11 @@ body {
   width: 115px;
 }
 
+.page-footer .academy-site svg:hover,
+.inner-footer .academy-site svg:hover {
+  fill: #756157;
+}
+
 /*Страница каталога*/
 /*Фильтрация*/
 .inner-head {
@@ -521,6 +526,14 @@ body {
 .breadcrumps a {
   text-decoration: none;
   color: #fff;
+}
+
+.breadcrumps a:not(.breadcrump-arrow):hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumps a:not(.breadcrump-arrow):active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter {
@@ -570,10 +583,38 @@ body {
   border: none;
   padding: 8px 50px;
   margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #68a2ca;
+}
+
+.subscribe-button:focus {
+  background-color: #68a2ca;
+}
+
+.subscribe-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reset-button {
   background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  opacity: 60%;
+}
+
+.reset-button:focus {
+  border: 3px solid rgba(131, 179, 211, 1);
+}
+
+.reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
   border: none;
 }
 
@@ -585,9 +626,19 @@ body {
 }
 
 .results select {
-  width: 292px;
+  width: 290px;
   margin-right: 70px;
   height: 49px;
+  border: 2px solid rgba(229, 229, 229, 1);
+}
+
+.results select:hover {
+  border: 2px solid rgba(104, 162, 202, 1);
+  cursor: pointer;
+}
+
+.results select:focus {
+  border: 2px solid rgba(104, 162, 202, 1);
 }
 
 .gallery h2 {
@@ -617,6 +668,23 @@ body {
   list-style-type: none;
   padding: 17px 16px;
   border: 2px solid #e5e5e5;
+}
+
+.type-of-view .current {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.type-of-view li:hover {
+  border: 2px solid rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.type-of-view li:focus {
+  border: 2px solid rgba(104, 162, 202, 1);
+}
+
+.type-of-view li:active {
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .hotels-list {
@@ -692,6 +760,7 @@ body {
   width: 140px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .hotels-list button:hover {
@@ -803,6 +872,10 @@ body {
   list-style-type: none;
 }
 
+.gallery-pagination li {
+  padding: 0;
+}
+
 .gallery-pagination a {
   font-size: 20px;
   line-height: 36px;
@@ -813,12 +886,28 @@ body {
   background-color: #82b3d3;
   padding: 12px 24px;
   margin-right: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
 }
 
 .current-page a,
 .other-pages a {
   background-color: #f2f2f2;
   color: #000;
+}
+
+.gallery-pagination a:not(.current-page a, .other-pages a):hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.gallery-pagination a:not(.current-page a, .other-pages a):focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.gallery-pagination a:not(.current-page a, .other-pages a):active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Подписка*/
