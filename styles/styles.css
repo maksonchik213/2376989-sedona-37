@@ -81,6 +81,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: -12px;
   padding: 0 70px;
 }
 
@@ -98,6 +99,11 @@ body {
 .page-navigation .navigation-item {
   margin: 0;
   padding: 0;
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
 }
 
 .user-menu {
@@ -121,10 +127,11 @@ body {
 .navigation-link-current::after {
   content: "";
   display: block;
+  position: relative;
+  bottom: -14px;
   height: 2px;
   width: auto;
   background: #756257;
-  margin: 21px auto 0;
 }
 
 .user-menu-link {
@@ -490,9 +497,16 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.mailing input {
+.mailing label,
+.inner-mailing label {
+  display: flex;
+}
+
+.mailing input,
+.inner-mailing input {
   line-height: 24px;
   font-size: 18px;
+  min-width: 452px;
 }
 
 /*Футер*/
@@ -629,6 +643,11 @@ body {
   padding: 0;
   list-style-type: none;
   margin-bottom: 40px;
+}
+
+.breadcrumps li:not(:last-child)::after {
+  content: url(../images/catalog/breadcrub_arrow.svg);
+  margin-left: 10px;
 }
 
 .breadcrumps a {
