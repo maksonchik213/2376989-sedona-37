@@ -118,6 +118,15 @@ body {
   color: #000;
 }
 
+.navigation-link-current::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: auto;
+  background: #756257;
+  margin: 21px auto 0;
+}
+
 .user-menu-link {
   display: block;
   min-width: 20px;
@@ -138,6 +147,19 @@ body {
   color: #fff;
   background-color: #756157;
   text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.user-menu-item-button a:hover {
+  background-color: #615048;
+}
+
+.user-menu-item-button a:focus {
+  background-color: #615048;
+}
+
+.user-menu-item-button a:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Стили контента*/
@@ -243,7 +265,25 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-  margin-bottom: 62px;
+  margin-bottom: 32px;
+}
+
+.advantages-item h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 30px auto 0;
+}
+
+.advantages-item-blue h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 30px auto 0;
 }
 
 .advantages-item-blue p {
@@ -371,12 +411,28 @@ body {
 
 .search-hotel .search {
   background-color: #756157;
+  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-hotel .search:hover {
+  background-color: #615048;
+}
+
+.search-hotel .search:focus {
+  background-color: #615048;
+}
+
+.search-hotel .search:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Подпись на рассылку*/
@@ -417,6 +473,21 @@ body {
   color: #fff;
   text-transform: uppercase;
   background-color: #82b3d3;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+.mailing button:hover {
+  background-color: #68a2ca;
+}
+
+.mailing button:focus {
+  background-color: #68a2ca;
+}
+
+.mailing button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .mailing input {
@@ -467,6 +538,18 @@ body {
   padding: 13px;
 }
 
+.social-network .social-icon:hover path {
+  fill: #68a2ca;
+}
+
+.social-network .social-icon:focus path {
+  fill: #68a2ca;
+}
+
+.social-network .social-icon:active path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .page-footer .phone,
 .inner-footer .phone {
   font-size: 40px;
@@ -475,14 +558,39 @@ body {
   width: 331px;
 }
 
+.page-footer .phone:hover,
+.inner-footer .phone:hover {
+  color: #756157;
+}
+
+.page-footer .phone:focus,
+.inner-footer .phone:focus {
+  color: #756157;
+}
+
+.page-footer .phone:active,
+.inner-footer .phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .page-footer .academy-site,
 .inner-footer .academy-site {
   width: 115px;
 }
 
-.page-footer .academy-site svg:hover,
-.inner-footer .academy-site svg:hover {
+.page-footer .academy-site:hover path,
+.inner-footer .academy-site:hover path {
   fill: #756157;
+}
+
+.page-footer .academy-site:focus path,
+.inner-footer .academy-site:focus path {
+  fill: #756157;
+}
+
+.page-footer .academy-site:active path,
+.inner-footer .academy-site:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*Страница каталога*/
@@ -866,14 +974,24 @@ body {
 }
 /*Пагинация*/
 .gallery-pagination {
+  position: relative;
   display: flex;
   padding: 0 70px;
   margin: 0;
   list-style-type: none;
 }
 
+.gallery-pagination::before {
+  content: "";
+  position: absolute;
+  width: 1060px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  margin-top: -40px;
+}
+
 .gallery-pagination li {
   padding: 0;
+  display: block;
 }
 
 .gallery-pagination a {
@@ -937,6 +1055,21 @@ body {
   color: #fff;
   text-transform: uppercase;
   background-color: #82b3d3;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+.inner-mailing button:hover {
+  background-color: #68a2ca;
+}
+
+.inner-mailing button:focus {
+  background-color: #68a2ca;
+}
+
+.inner-mailing button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .inner-mailing input {
