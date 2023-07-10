@@ -481,7 +481,7 @@ body {
   text-transform: uppercase;
   background-color: #82b3d3;
   border: none;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
 
@@ -782,6 +782,106 @@ body {
   line-height: 22px;
 }
 
+/*Range slider*/
+/*Поля для ввода*/
+
+.range-wrapper-inputs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 36px;
+}
+
+.catalog-filter-label {
+  display: flex;
+}
+
+.range-input {
+  padding: 12px 112px 12px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  appearance: textfield;
+  background-color: #f2f2f2;
+  width: 143px;
+  cursor: pointer;
+}
+
+.range-input:hover {
+  background-color: #e6e6e6;
+}
+
+.range-input:active {
+  outline: 3px solid #83b3d3;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input-from {
+  border-radius: 4px 0 0 4px;
+  position: relative;
+}
+
+.range-input-from::after {
+  position: absolute;
+  content: "от";
+  color: #000;
+  opacity: 30%;
+}
+
+.range-input-to {
+  border-radius: 0 4px 4px 0;
+}
+
+/*Ползунок*/
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: grey;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.toggle-min {
+  top: -8px;
+  right: 275px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 50px;
+}
+
 .filter .filter-buttons {
   display: flex;
   flex-direction: column;
@@ -795,6 +895,10 @@ body {
 
 .options {
   line-height: 23px;
+}
+
+.filter-buttons {
+  margin-bottom: 70px;
 }
 
 .filter-button {
@@ -1176,7 +1280,7 @@ body {
   text-transform: uppercase;
   background-color: #82b3d3;
   border: none;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
 
