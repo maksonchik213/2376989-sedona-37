@@ -93,23 +93,59 @@
                           </li>
                     </div>
                     <div class="type-of-living">
-                      <label id="type-of-housing"><span class="filter-title">Тип Жилья:</span></label>
-                      <label for="type-of-housing">
-                        <input type="radio" id="contactChoice1" name="contact" value="hotel" checked>
-                        <span class="options">Гостиница</span>
-                      </label>
-
-                      <label for="type-of-housing">
-                        <input type="radio" name="contact" value="motel">
-                        <span class="options">Мотель</span>
-                      </label>
-
-                      <label for="type-of-housing">
-                        <input type="radio" name="contact" value="apartments">
-                        <span class="options">Апартаменты</span>
-                      </label>
+                      <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Тип жилья:</legend>
+                        <ul class="catalog-filter-list">
+                          <li class="catalog-filter-item">
+                            <label class="control">
+                              <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                              <span class="control-mark"></span>
+                              <span class="control-label">Гостиница</span>
+                            </label>
+                          </li>
+                          <li class="catalog-filter-item">
+                            <label class="control">
+                              <input class="visually-hidden control-input" type="radio" name="product-group" value="care-products">
+                              <span class="control-mark"></span>
+                              <span class="control-label">Мотель</span>
+                            </label>
+                          </li>
+                          <li class="catalog-filter-item">
+                            <label class="control">
+                              <input class="visually-hidden control-input" type="radio" name="product-group" value="accessories">
+                              <span class="control-mark"></span>
+                              <span class="control-label">Апартаменты</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </fieldset>
                     </div>
                     <div class="slider">
+                      <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+
+                        <div class="range">
+                          <div class="range-scale">
+                            <div class="range-bar" style="left: 42px; width: 136px">
+                              <button class="range-toggle toggle-min">
+                                <span class="visually-hidden">Изменить минимальную цену.</span>
+                              </button>
+                              <button class="range-toggle toggle-max">
+                                <span class="visually-hidden">Изменить максимальную цену.</span>
+                              </button>
+                            </div>
+                          </div>
+
+                          <div class="range-wrapper-inputs">
+                            <label class="catalog-filter-label">
+                              от <input class="range-input" type="number" value="50" name="min-price"> ₽
+                            </label>
+                            <label class="catalog-filter-label">
+                              до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
 
                     </div>
                     <div class="filter-buttons">

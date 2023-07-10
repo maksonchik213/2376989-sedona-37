@@ -680,7 +680,7 @@ body {
   flex-direction: column;
 }
 
-fieldset {
+.catalog-filter-group {
   border: none;
   margin: 0;
   padding: 0;
@@ -688,6 +688,9 @@ fieldset {
 
 .catalog-filter-title {
   margin-bottom: 33px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .catalog-filter-list {
@@ -757,6 +760,26 @@ fieldset {
 .filter input[type] .filter .type-of-living {
   display: flex;
   flex-direction: column;
+}
+
+/* Radio */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-label {
+  line-height: 22px;
 }
 
 .filter .filter-buttons {
