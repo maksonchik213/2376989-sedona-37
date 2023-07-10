@@ -671,12 +671,90 @@ body {
   padding-bottom: 70px;
 }
 
+.filter-title {
+  margin-bottom: 33px;
+}
+
 .filter .infrastructure {
   display: flex;
   flex-direction: column;
 }
 
-.filter .type-of-living {
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  margin-bottom: 33px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item {
+  margin: 0;
+  padding: 0;
+}
+
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.control:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.control:active .control-mark {
+  border: 3px solid #83b3d3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+  width: 8px;
+  height: 2px;
+  background-color: #3f5e72;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  bottom: 8px;
+  left: 7px;
+  width: 12px;
+  height: 2px;
+  background-color: #3f5e72;
+  content: "";
+  transform: rotate(-45deg);
+}
+
+.control-label {
+  margin-left: 36px;
+}
+
+.filter input[type] .filter .type-of-living {
   display: flex;
   flex-direction: column;
 }

@@ -67,21 +67,30 @@
 
                   <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
                     <div class="infrastructure">
-                      <label id="type-of-infrastructure"><span class="filter-title">Инфраструктура:</span></label>
-                        <label for="type-of-infrastructure">
-                          <input type="checkbox" id="contactChoice1" name="contact" value="hotel" checked>
-                          <span class="options">Бассейн</span>
-                        </label>
-
-                      <label for="type-of-infrastructure">
-                        <input type="checkbox" name="contact" value="motel" checked>
-                        <span class="options">Парковка</span>
-                      </label>
-
-                      <label for="type-of-infrastructure">
-                        <input type="checkbox" name="contact" value="apartments">
-                        <span class="options">Wi-Fi</span>
-                      </label>
+                      <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Инфраструктура:</legend>
+                        <ul class="catalog-filter-list">
+                          <li class="catalog-filter-item">
+                            <label class="control">
+                              <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men" checked>
+                              <span class="control-mark"></span>
+                              <span class="control-label">Бассейн</span>
+                            </label>
+                          </li>
+                          <li class="catalog-filter-item">
+                            <label class="control">
+                              <input class="visually-hidden control-input" type="checkbox" name="homme-deep-cleansing-cool">
+                              <span class="control-mark"></span>
+                              <span class="control-label">Парковка</span>
+                            </label>
+                          </li>
+                          <li class="catalog-filter-item">
+                            <label class="control">
+                              <input class="visually-hidden control-input" type="checkbox" name="so-intense">
+                              <span class="control-mark"></span>
+                              <span class="control-label">Wi-Fi</span>
+                            </label>
+                          </li>
                     </div>
                     <div class="type-of-living">
                       <label id="type-of-housing"><span class="filter-title">Тип Жилья:</span></label>
