@@ -633,12 +633,21 @@ body {
   position: relative;
   width: 577px;
   margin: 64px 70px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
 }
 
 .modal-content input {
   background-color: #f2f2f2;
   padding: 12px 20px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
+  border-radius: 4px;
 }
 
 .modal-close-button {
@@ -655,6 +664,20 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  opacity: 60%;
 }
 
 .modal-title {
@@ -678,6 +701,12 @@ body {
 
 .date-field {
   margin-bottom: 4px;
+}
+
+.date-field input {
+  background-image: url("../images/calendar_icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px right 17px;
 }
 
 .field-in span {
@@ -716,6 +745,28 @@ body {
   outline: none;
 }
 
+.ticket-field {
+  position: relative;
+}
+
+.ticket-field .ticket-button {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+}
+
+.reduse-button {
+  top: 50%;
+  transform: translateY(-75%);
+  right: 83px;
+}
+
+.increase-button {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
 .ticket-container {
   display: flex;
   margin-bottom: 48px;
@@ -729,14 +780,58 @@ body {
   margin-right: 46px;
 }
 
+.kids-counting {
+  position: relative;
+}
+
 .kids-counting span {
   margin-right: 82px;
+}
+
+.kids-counting .tooltip-icon {
+  position: absolute;
+  left: 44px;
+  top: 10px;
+  margin-left: 10px;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
+  width: 256px;
+  box-shadow: 0 15px 30px 0 #0000004d;
+  transform: translateX(-20%);
+}
+
+.tooltip-icon:hover {
+  cursor: pointer;
+}
+
+.tooltip-icon:hover ~ .tooltip-text {
+  display: block;
+}
+
+.kids-counting .tooltip-text::before {
+  position: absolute;
+  top: -15px;
+  right: 128px;
+  content: url("../images/triangle_tooltip.svg");
 }
 
 .ticket-container input {
   width: 110px;
   text-align: center;
   border: none;
+  border-radius: 4px;
   outline: none;
 }
 
@@ -755,6 +850,11 @@ input::-webkit-inner-spin-button {
   background-color: #83b3d3;
   color: #fff;
   cursor: pointer;
+  font-family: PT Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .modal-content .find-button:hover {
@@ -949,8 +1049,31 @@ input::-webkit-inner-spin-button {
 
 .range-wrapper-inputs {
   display: flex;
+  position: relative;
   gap: 2px;
   margin-bottom: 36px;
+}
+
+.range-wrapper-inputs::before {
+  position: absolute;
+  content: "от";
+  color: #000;
+  opacity: 30%;
+  left: 105px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.range-wrapper-inputs::after {
+  position: absolute;
+  content: "до";
+  color: #000;
+  opacity: 30%;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 .catalog-filter-label {
@@ -958,7 +1081,7 @@ input::-webkit-inner-spin-button {
 }
 
 .range-input {
-  padding: 12px 112px 12px 20px;
+  padding: 12px 20px 12px 20px;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -968,6 +1091,7 @@ input::-webkit-inner-spin-button {
   background-color: #f2f2f2;
   width: 143px;
   cursor: pointer;
+  text-align: left;
 }
 
 .range-input:hover {
@@ -987,13 +1111,6 @@ input::-webkit-inner-spin-button {
 .range-input-from {
   border-radius: 4px 0 0 4px;
   position: relative;
-}
-
-.range-input-from::after {
-  position: absolute;
-  content: "от";
-  color: #000;
-  opacity: 30%;
 }
 
 .range-input-to {
@@ -1047,6 +1164,7 @@ input::-webkit-inner-spin-button {
 .filter .filter-buttons {
   display: flex;
   flex-direction: column;
+  margin-top: 57px;
 }
 
 .filter-title {
