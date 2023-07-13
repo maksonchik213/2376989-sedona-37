@@ -1585,3 +1585,7 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 24px;
 }
+
+.display-none {
+  display: none;
+}
