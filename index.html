@@ -203,16 +203,20 @@
                 </button>
                 <!--Форма брони-->
                 <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label class="date-field field-in" for="date-in">
-                    <span>Дата заезда:</span>
-                    <input id="date-in" type="text" name="date-in" value="27 апреля 2020">
-                    <p>Мы не можем отправить вас в прошлое</p>
+                  <div class="date-field">
+                    <label class="field-in" for="date-in">
+                      Дата заезда:
+                      <input id="date-in" type="text" name="date-in" value="27 апреля 2020">
+                      <span class="prompt">Мы не можем отправить вас в прошлое</span>
+                  </div>
                   </label>
-                  <label class="date-field field-out" for="date-out">
-                    <span>Дата выезда:</span>
-                    <input id="date-out" type="text" name="date-out" value="1 сентября 2023">
-                    <p>На эти даты есть свободные номера. Пока есть.</p>
-                  </label>
+                  <div class="date-field">
+                    <label class="field-out" for="date-out">
+                      Дата выезда:
+                      <input id="date-out" type="text" name="date-out" value="1 сентября 2023">
+                      <span class="prompt">На эти даты есть свободные номера. Пока есть.</span>
+                    </label>
+                </div>
                   <div class="ticket-container">
                     <label class="ticket-field adult-counting" for="adult">
                       <span>Взрослые:</span>
