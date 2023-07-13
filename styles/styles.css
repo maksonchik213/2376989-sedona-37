@@ -741,10 +741,18 @@ body {
 }
 
 .ticket-field {
+  display: flex;
+}
+
+.ticket-field span {
+  align-self: center;
+}
+
+.counting-field {
   position: relative;
 }
 
-.ticket-field .ticket-button {
+.counting-field .ticket-button {
   position: absolute;
   border: none;
   cursor: pointer;
@@ -780,7 +788,7 @@ body {
 }
 
 .kids-counting span {
-  margin-right: 82px;
+  margin-right: 90px;
 }
 
 .kids-counting .tooltip-icon {
@@ -793,6 +801,8 @@ body {
 .tooltip-text {
   display: none;
   position: absolute;
+  top: 50px;
+  left: 2px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;

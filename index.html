@@ -220,17 +220,19 @@
                   <div class="ticket-container">
                     <label class="ticket-field adult-counting" for="adult">
                       <span>Взрослые:</span>
-                      <input id="adult" type="number" name="adult" value="2">
-                      <button class="ticket-button reduse-button">
-                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                          </svg>
-                      </button>
-                      <button class="ticket-button increase-button">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                          </svg>
-                      </button>
+                        <div class="counting-field">
+                          <button class="ticket-button reduse-button">
+                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                            </svg>
+                          </button>
+                          <input id="adult" type="number" name="adult" value="2">
+                          <button class="ticket-button increase-button">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                              </svg>
+                          </button>
+                        </div>
                     </label>
                     <label class="ticket-field kids-counting" for="kids">
                       <span>Дети:</span>
@@ -241,17 +243,19 @@
                       <p class="tooltip-text" role="tooltip" id="tooltip-label-date" aria-labelledby="tooltip-label-date">
                         Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                       </p>
-                      <input id="kids" type="number" name="kids" value="2">
-                      <button class="ticket-button reduse-button">
-                        <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                          </svg>
-                      </button>
-                      <button class="ticket-button increase-button">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                          </svg>
-                      </button>
+                        <div class="counting-field">
+                          <button class="ticket-button reduse-button">
+                            <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                            </svg>
+                          </button>
+                          <input id="kids" type="number" name="kids" value="2">
+                          <button class="ticket-button increase-button">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                              </svg>
+                          </button>
+                      </div>
                     </label>
                   </div>
                   <button class="find-button" type="submit">Найти</button>
