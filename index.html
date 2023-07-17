@@ -9,7 +9,7 @@
   <body>
     <div class="page-container">
       <!--Разметка хэдера -->
-        <header class="page-header">
+        <header class="page-header" data-test="header">
           <nav class="navigation">
             <!--Навигация по сайту-->
             <a href="#">
@@ -49,9 +49,9 @@
           </nav>
         </header>
         <!--Разметка контентной части-->
-          <main class="main-container main-content">
+          <main class="main-container main-content" data-test="main">
             <!--Блок "Hero"-->
-              <section class="block-hero">
+              <section class="block-hero" data-test="hero">
                 <div class="welcome-title">
                   <h1 class="main-title visually-hidden" hidden>Добро пожаловать в великолепную Седону! "Потому что "Гранд Каньон" - отстой</h1>
                   <img class="welcome" src="images/welcome_title.png" lang="eng" width="187" height="44" alt="Welcome">
@@ -60,7 +60,7 @@
                 </div>
               </section>
             <!--Блок с преимуществами-->
-              <section class="advantages">
+              <section class="advantages" data-test="advantages">
                 <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
                 <p class="advantages-reason">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
                 <ul class="advantages-list">
@@ -101,7 +101,7 @@
                 </ul>
               </section>
             <!--Блок сервисов-->
-              <section class="service">
+              <section class="service" data-test="service">
                 <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
                 <p class="staff">Опытный персонал и качественное обслуживание!</p>
                 <ul class="service-list">
@@ -123,13 +123,13 @@
                 </ul>
               </section>
             <!--Заказ гостиницы-->
-              <section class="search-hotel">
+              <section class="search-hotel" data-test="search">
                 <h2>Заинтересовались?</h2>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <button class="search">поиск гостиницы в седоне</button>
               </section>
             <!--Подписка на рассылку-->
-              <article class="mailing">
+              <article class="mailing" data-test="subscribe">
                 <b>Подпишитесь на рассылку</b>
                 <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form action="https://echo.htmlacademy.ru/" method="post" name="mail">
@@ -141,7 +141,7 @@
               </article>
           </main>
         <!--Разметка футера-->
-          <footer class="page-footer">
+          <footer class="page-footer" data-test="footer">
             <div class="footer-container">
             <!--Контактная информация-->
               <ul class="social-network">
