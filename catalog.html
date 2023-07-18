@@ -9,7 +9,7 @@
   <body>
     <div class="page-container">
       <!--Разметка хэдера -->
-        <header>
+        <header data-test="header">
           <nav class="navigation">
           <!--Навигация по сайту-->
             <a href="index.html">
@@ -47,7 +47,7 @@
           </nav>
         </header>
         <!--Разметка контентной части-->
-          <main class="main-container main-inner">
+          <main class="main-container main-inner" data-test="main">
             <!--Фильтровка по критериям-->
                 <section class="inner-head">
                     <h1 class="inner-title">Гостиницы Седоны</h1>
@@ -65,7 +65,7 @@
                       </li>
                     </ol>
 
-                  <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
+                  <form class="filter" action="https://echo.htmlacademy.ru/" method="post" data-test="filter">
                     <div class="infrastructure">
                       <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -156,7 +156,7 @@
                   </form>
                 </section>
             <!--Блок с Галереей-->
-              <section class="gallery">
+              <section class="gallery" data-test="catalog">
                 <div class="results">
                   <h2>Найдено гостиниц: 38</h2>
                   <select>
@@ -303,7 +303,7 @@
                 </ol>
               </section>
             <!--Подписка на рассылку-->
-              <article class="inner-mailing">
+              <article class="inner-mailing" data-test="subscribe">
                 <b>Подпишитесь на рассылку</b>
                 <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form action="https://echo.htmlacademy.ru/" method="post" name="mail">
@@ -315,7 +315,7 @@
               </article>
           </main>
         <!--Разметка футера-->
-        <footer class="page-footer">
+        <footer class="page-footer" data-test="footer">
           <div class="footer-container">
           <!--Контактная информация-->
           <ul class="social-network">
