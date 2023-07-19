@@ -1346,10 +1346,25 @@ input::-webkit-inner-spin-button {
 }
 
 .results select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
   min-width: 290px;
   margin-right: 30px;
   height: 49px;
   border: 2px solid rgba(229, 229, 229, 1);
+}
+
+select:not([multiple]) {
+  padding-left: 18px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) 18px;
+  background-size: 14px auto;
+  background-image: url("../images/catalog/select-arrow.svg");
 }
 
 .results select:hover {
@@ -1388,11 +1403,15 @@ input::-webkit-inner-spin-button {
 
 .type-of-view {
   display: flex;
+  position: relative;
   margin: 0;
   gap: 8px;
 }
 
 .type-of-view li {
+  position: relative;
+  top: -5px;
+  left: 2px;
   width: 48px;
   height: 48px;
   list-style-type: none;
@@ -1416,6 +1435,12 @@ input::-webkit-inner-spin-button {
 
 .type-of-view li:active {
   border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.type-of-view img {
+  position: absolute;
+  top: 15px;
+  left: 14px;
 }
 
 .hotels-list {
@@ -1633,7 +1658,7 @@ input::-webkit-inner-spin-button {
   color: #fff;
   text-decoration: none;
   background-color: #82b3d3;
-  padding: 12px 24px;
+  padding: 12px 19px;
 
   cursor: pointer;
   border-radius: 4px;
