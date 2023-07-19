@@ -140,10 +140,6 @@ body {
   background: #756257;
 }
 
-.navigation-link-current {
-  opacity: 30%;
-}
-
 .user-menu-item:hover:not(.user-menu-item-button) {
   opacity: 30%;
 }
@@ -691,7 +687,7 @@ body {
   position: relative;
   width: 577px;
   margin: 64px 70px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   color: #000;
@@ -711,8 +707,8 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: -10px;
-  right: 0;
+  top: -3px;
+  right: -19px;
   width: 52px;
   height: 54px;
   background-color: #f2f2f2;
@@ -762,8 +758,9 @@ body {
 .date-field input {
   background-image: url("../images/calendar_icon.svg");
   background-repeat: no-repeat;
-  background-position: top 16px right 17px;
+  background-position: top 16px right 10px;
   background-color: rgba(242, 242, 242, 1);
+  width: 435px;
 }
 
 .date-field input:hover {
@@ -777,7 +774,7 @@ body {
 
 .field-in .prompt {
   margin: 0;
-  margin: 4px 140px 23px 150px;
+  margin: 4px 140px 23px 156px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -787,7 +784,7 @@ body {
 
 .field-out .prompt {
   margin: 0;
-  margin: 4px 95px 23px 150px;
+  margin: 4px 88px 23px 157px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -798,14 +795,20 @@ body {
 
 .date-field input {
   margin-left: 20px;
-  width: 440px;
+  width: 428px;
   border: none;
   border-radius: 4px;
   outline: none;
 }
 
 .field-in input {
-  margin-left: 25px;
+  margin-left: 22px;
+  font-family: inherit;
+}
+
+.field-out input {
+  margin-left: 16px;
+  font-family: inherit;
 }
 
 .ticket-field {
@@ -877,13 +880,13 @@ body {
 }
 
 .kids-counting span {
-  margin-right: 90px;
+  margin-right: 85px;
 }
 
 .kids-counting .tooltip-icon {
   position: absolute;
-  left: 44px;
-  top: 10px;
+  left: 50px;
+  top: 13px;
   margin-left: 10px;
 }
 
@@ -900,7 +903,7 @@ body {
   color: #fff;
   background-color: #333;
   border-radius: 10px;
-  padding: 15px 18px 18px 22px;
+  padding: 25px 18px 18px 17px;
   width: 256px;
   box-shadow: 0 15px 30px 0 #0000004d;
   transform: translateX(-20%);
@@ -917,7 +920,7 @@ body {
 .kids-counting .tooltip-text::before {
   position: absolute;
   top: -15px;
-  right: 128px;
+  right: 125px;
   content: url("../images/triangle_tooltip.svg");
 }
 
