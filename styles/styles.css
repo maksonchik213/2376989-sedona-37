@@ -441,6 +441,8 @@ body {
 }
 
 .search-hotel .search {
+  display: inline-block;
+  text-decoration: none;
   background-color: #756157;
   padding: 8px 50px;
   font-family: inherit;
