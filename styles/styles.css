@@ -181,6 +181,7 @@ body {
 
 /*Стили контента*/
 .block-hero {
+  background-color: #6495ed;
   background-image: url(../images/index_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -480,6 +481,7 @@ body {
 }
 
 .mailing {
+  background-color: #6495ed;
   background-image: url(../images/subscribe_background.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -971,6 +973,7 @@ input::-webkit-inner-spin-button {
 /*Страница каталога*/
 /*Фильтрация*/
 .inner-head {
+  background-color: #6495ed;
   background-image: url(../images/catalog/catalog_background.png);
   background-repeat: no-repeat;
   background-size: cover;
