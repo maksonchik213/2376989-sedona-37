@@ -1089,8 +1089,12 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
+.control:focus-within .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
 .control:active .control-mark {
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
