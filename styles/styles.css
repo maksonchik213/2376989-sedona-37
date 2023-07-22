@@ -1438,7 +1438,7 @@ select:not([multiple]) {
   cursor: pointer;
 }
 
-.type-of-view li:focus {
+.type-of-view li:focus-within {
   border: 2px solid rgba(104, 162, 202, 1);
 }
 
@@ -1450,6 +1450,16 @@ select:not([multiple]) {
   position: absolute;
   top: 15px;
   left: 14px;
+}
+
+.view-button {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: inherit;
+  height: inherit;
+  border: none;
+  opacity: 0;
 }
 
 .hotels-list {
